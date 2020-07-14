@@ -964,8 +964,7 @@ function mail_me() {
 }
 
 mashiro_global.ini.normalize();
-loadCSS(mashiro_option.jsdelivr_css_src);
-loadCSS(mashiro_option.entry_content_theme_src);
+
 loadCSS("https://at.alicdn.com/t/font_679578_qyt5qzzavdo39pb9.css");
 loadCSS("https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css");
 loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC");
@@ -1764,6 +1763,7 @@ var home = location.href,
       });
     }
   }
+
 $(function () {
   Siren.AH();
   Siren.PE();
@@ -1776,6 +1776,7 @@ $(function () {
   Siren.MN();
   Siren.IA();
   Siren.LV();
+
   if (Poi.pjax) {
     $(document).pjax('a[target!=_top]', '#page', {
       fragment: '#page',
@@ -1790,6 +1791,7 @@ $(function () {
       $("#bar").css("width", "0%");
       if (mashiro_option.NProgressON) NProgress.start();
       Siren.MNH();
+
     }).on('pjax:complete', function () {
       Siren.AH();
       Siren.PE();
@@ -1851,6 +1853,7 @@ $(function () {
   console.log("%c : %c", "background:#24272A; color:#ffffff", "", "看什么看");
   console.log("%c : %c", "background:#24272A; color:#ffffff", "", "不准看");
 });
+
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
   isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,
   isIe = navigator.userAgent.toLowerCase().indexOf('msie') > -1;
